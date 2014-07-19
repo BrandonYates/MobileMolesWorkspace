@@ -1,8 +1,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     tools:context="com.android.mobilemoles.MainActivity"
     tools:ignore="MergeRootFrame" >
 
@@ -16,4 +16,27 @@
         android:text="Button" />
 
 </RelativeLayout>
+=======
+    tools:context=".MainActivity" >
+>>>>>>> c86e4b725bd88683a08b59655660c7c9530b9197
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnIntendS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <Button
+        android:id="@+id/btnIntendS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/pic" />
+
+</RelativeLayout>
