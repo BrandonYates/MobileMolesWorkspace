@@ -1,0 +1,23 @@
+import java.awt.image.BufferedImage;
+
+
+public class driver {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//create the detector
+		  CannyEdgeDetector detector = new CannyEdgeDetector();
+		  //adjust its parameters as desired
+		  detector.setLowThreshold(0.5f);
+		  detector.setHighThreshold(1f);
+		  //apply it to an image
+		  detector.setSourceImage(frame);
+		  detector.process();
+		  BufferedImage edges = detector.getEdgesImage();
+
+	}
+
+}

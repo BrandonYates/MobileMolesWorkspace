@@ -1,0 +1,14 @@
+/*Brandon Yates
+ *Mobile Moles Group Project
+ *Canny edge detector demo
+ */
+import java.awt.image.BufferedImage;
+import java.util.Arrays;
+
+public class CannyEdgeDetector {
+
+	public static void main(String[] args) {
+
+	}
+
+}

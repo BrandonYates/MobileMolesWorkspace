@@ -1,0 +1,249 @@
+[
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "af40efd1aad4e7e995500e66d8832cc4e380fce5",
+    "jarFileModificationDate": "2014-01-08T11:46:05.424-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4b49dbbd63bac98e1b02fd5ad398dea471cd41ed",
+    "jarFileModificationDate": "2014-01-08T11:45:54.896-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a3d1a9689f1c8e36ab64fb669df92076771c42f2",
+    "jarFileModificationDate": "2014-01-08T11:45:54.812-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\ext\\sunmscapi.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dce79bf6370699defcec5c104af7ceb7417cfaeb",
+    "jarFileModificationDate": "2014-01-08T11:46:03.292-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "bc3be927c6d96fe2b53745052cd354cfa6fa5e47",
+    "jarFileModificationDate": "2014-01-08T11:46:09.621-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\ext\\localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "290db2acdf8d82a3a8c351ce030e0c19ff93b003",
+    "jarFileModificationDate": "2014-01-08T11:45:54.803-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\ext\\jaccess.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a22ccb0236f5d475302a3f538d923d6cf05c68cd",
+    "jarFileModificationDate": "2014-01-08T11:45:54.800-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\ext\\access-bridge-64.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "97e3bcb13f325218fcf9d2286aa7ce6e8c231b7a",
+    "jarFileModificationDate": "2014-01-08T11:45:54.811-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\ext\\sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "95dc9053062d68cde4e8c38494cc63aefd7b0a42",
+    "jarFileModificationDate": "2014-01-08T11:45:54.808-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\ext\\sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "appcompat_v7",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "759e58c7d499525059d9ce23a996329a5b6ee242",
+    "jarFileModificationDate": "2014-07-17T10:47:57.338-05:00",
+    "location": "C:\\Users\\root.BrandonYates-PC\\Documents\\GitHub\\MobileMolesWorkspace\\appcompat_v7\\bin\\appcompat_v7.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0b059624e2a7e7dfce075cd0313304d747301d01",
+    "jarFileModificationDate": "2014-01-08T11:46:02.989-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f4150db54a3200189411d612ea21ce4a8a614bb3",
+    "jarFileModificationDate": "2014-01-08T11:45:54.814-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\ext\\zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "android-support-v7-appcompat",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "21297ae2bf22a0ce81c9b59992cf0693eec45d5b",
+    "jarFileModificationDate": "2014-06-15T11:06:41.486-05:00",
+    "location": "C:\\Users\\root.BrandonYates-PC\\Documents\\GitHub\\MobileMolesWorkspace\\appcompat_v7\\libs\\android-support-v7-appcompat.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3800223b66f57bc4daff4bbd398a65020d901d82",
+    "jarFileModificationDate": "2014-01-08T11:45:54.856-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5978bc159419ed07f2a57488d10e91f4fd1e3c40",
+    "jarFileModificationDate": "2014-01-08T11:45:54.802-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\ext\\dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ded9acc6a9792b8f1afc470f0c9cd36d178914cd",
+    "jarFileModificationDate": "2014-06-15T11:06:37.873-05:00",
+    "location": "C:\\Users\\root.BrandonYates-PC\\Documents\\GitHub\\MobileMolesWorkspace\\appcompat_v7\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "92822ec981a4d0a7f002c792e7b3b60f9a1f26fa",
+    "jarFileModificationDate": "2014-06-15T09:49:55.546-05:00",
+    "location": "C:\\Program Files (x86)\\Android\\android-sdk\\toolsCopy\\platforms\\android-15\\android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "annotations",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2db301669e463cda87a20e0701f5e99757ca60be",
+    "jarFileModificationDate": "2014-06-15T10:06:37.778-05:00",
+    "location": "C:\\Program Files (x86)\\Android\\android-sdk\\toolsCopy\\tools\\support\\annotations.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f831655c50b92c41e366442d09511ea84270c45e",
+    "jarFileModificationDate": "2014-01-08T11:45:54.851-06:00",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\jce.jar",
+    "javaRuntime": true
+  }
+]
