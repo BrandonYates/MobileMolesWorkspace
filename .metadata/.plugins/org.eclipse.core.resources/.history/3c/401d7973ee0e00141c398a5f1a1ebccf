@@ -13,8 +13,7 @@ public class driver {
 		
 		BufferedImage image = null;
 		try {
-			System.out.println("inside file retreival try");
-			image = ImageIO.read(new File("src/guyfawkesmask.jpg"));
+			image = ImageIO.read(new File("guyfawkesmask.jpg"));
 
 		// Do something with the image.
 		} 
@@ -33,7 +32,6 @@ public class driver {
 		BufferedImage edges = detector.getEdgesImage();
 		try {
 		    // retrieve image
-			System.out.println("inside outputfile writer try");
 		    File outputfile = new File("edges.jpg");
 		    ImageIO.write(edges, "jpg", outputfile);
 		} catch (IOException e) {

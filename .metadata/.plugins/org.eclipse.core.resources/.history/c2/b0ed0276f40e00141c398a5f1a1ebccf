@@ -14,7 +14,7 @@ public class driver {
 		BufferedImage image = null;
 		try {
 			System.out.println("inside file retreival try");
-			image = ImageIO.read(new File("src/guyfawkesmask.jpg"));
+			image = ImageIO.read(new File("/guyfawkesmask.jpg"));
 
 		// Do something with the image.
 		} 
