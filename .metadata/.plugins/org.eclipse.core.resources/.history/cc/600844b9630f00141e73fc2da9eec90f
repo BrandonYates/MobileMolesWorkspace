@@ -14,7 +14,7 @@ public class driver {
 		BufferedImage image = null;
 		try {
 			System.out.println("inside file retreival try");
-			image = ImageIO.read(new File("1 finger.jpg"));
+			image = ImageIO.read(new File("cannyEdgeDetector/1 finger.jpg"));
 
 		// Do something with the image.
 		} 
