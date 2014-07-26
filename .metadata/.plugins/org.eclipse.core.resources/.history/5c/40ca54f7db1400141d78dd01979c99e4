@@ -35,7 +35,7 @@ public class MainActivity extends ActionBarActivity {
 	public static final int PLANT_RESULTS = 1;
 	public static final String SEARCH_PLANT_NAME = "SEARCH_PLANT_NAME";
 	private AutoCompleteTextView actPlantName;
-	private static Bitmap selectedImage;
+	private Bitmap selectedImage;
 	private ImageView imgPlantSearch;
 
 	@Override
@@ -104,15 +104,18 @@ public class MainActivity extends ActionBarActivity {
 		// find the path of the selected image.
 		Uri photoLocation = photoPickerIntent.getData();
 
+		// invoke the color match activity from PlantPlaces.com Mobile for Android - Production.
+		Intent plantPlacesColor = new Intent(PLANTPLACES_COLOR_ACTION);
 
-		try{
-			InputStream openInputStream = getApplicationContext().getContentResolver().openInputStream(photoLocation);
-			// take a stream of data, and convert it to a Bitmap.
-			selectedImage = BitmapFactory.decodeStream(openInputStream);
-		} catch(FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		// pass in the path of the image that was selected.
 
-		}
+		// a bundle is a collection of related data that you can pass from one intent to another.
+		Bundle fileInfo = new Bundle();
+
+		// add the file location to this bundle.
+		fileInfo.putString(IMAGE_FILENAME, photoLocation.toString());
+
 	}
+
+
 }
