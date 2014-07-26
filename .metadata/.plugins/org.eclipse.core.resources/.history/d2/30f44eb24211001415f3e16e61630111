@@ -1,0 +1,50 @@
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+
+
+public class driver {
+
+	/**
+	 * @param args
+	 */
+
+	public static void main(String[] args) {
+		String filenameIn = "2fingers.jpg";
+		String filenameOut = "2fingersOUT.jpg";
+		
+		BufferedImage image = null;
+		try {
+			System.out.println("inside file retreival try");
+			image = ImageIO.read(new File(filenameIn));
+
+		// Do something with the image.
+		} 
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		//create the detector
+		CannyEdgeDetector detector = new CannyEdgeDetector();
+		//adjust its parameters as desired
+		detector.setLowThreshold(1.0f);
+		detector.setHighThreshold(2.55f);
+		//apply it to an image
+		detector.setSourceImage(image);
+		detector.process();
+		BufferedImage edges = detector.getEdgesImage();
+		fingerFinder f = new fingerFinder();
+		//int num = f.numFingers(edges);
+		f.findPalmColor(edges);
+		try {
+		    // retrieve image
+			System.out.println("inside outputfile writer try");
+		    File outputfile = new File(filenameOut);
+		    ImageIO.write(edges, "jpg", outputfile);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

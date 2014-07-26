@@ -1,1 +1,12 @@
-{}
+{
+  "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jdk1.7.0_45\\jre\\lib\\rt.jar",
+    "status": "RESOLVED"
+  },
+  "C:\\Users\\root.BrandonYates-PC\\Documents\\GitHub\\MobileMolesWorkspace\\cannyEdgeDetector\\src": {
+    "location": "C:\\Users\\root.BrandonYates-PC\\Documents\\GitHub\\MobileMolesWorkspace\\cannyEdgeDetector\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\root.BrandonYates-PC\\Documents\\GitHub\\MobileMolesWorkspace\\cannyEdgeDetector\\src\u0027. Skipped."
+  }
+}

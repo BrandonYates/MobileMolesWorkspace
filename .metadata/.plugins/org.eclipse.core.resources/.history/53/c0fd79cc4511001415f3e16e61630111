@@ -1,0 +1,180 @@
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+
+
+public class fingerFinder {
+	
+	private int height;
+	private int width;
+	private int picsize;
+	
+	public int numFingers(BufferedImage edges){
+		
+		width = edges.getWidth();
+		height = edges.getHeight();
+		picsize = width * height;
+		
+		
+		int[] pixels = (int[]) edges.getData().getDataElements(0, 0, width, height, null);
+		System.out.printf("picsize = %d\n", picsize);
+		
+		for(int j = 0; j < width; j++)
+		{
+			for(int k = 0; k < height; k++)
+			{
+				int index = j + k * width;
+				if(index == picsize/2)
+				{
+					System.out.println("loop halfway executed");
+					System.out.printf("pixels[%d] = %d\n", index, pixels[index]);
+				}
+				if(pixels[index] == -1)
+				{
+					int edgeLen = pathLen(pixels, index, 'A');
+					System.out.printf("the longest edge length = %d", edgeLen);
+					break;
+				}
+			}
+		}
+		/*
+		for (int i = 0; i < picsize; i++) {
+			//System.out.printf("%d\n", i);
+			
+			if(i!= picsize -1)
+			{
+				if(pixels[i] != pixels[i+1])
+				{
+					System.out.printf("pixels[%d] = %d\n", i, pixels[i]);
+					System.out.printf("pixels[%d] = %d\n", i+1, pixels[i+1]);
+					break;
+				}
+			}
+		}*/
+		return 0;
+	}
+	
+	public BufferedImage findPalmColor(BufferedImage edges)
+	{
+		width = edges.getWidth();
+		height = edges.getHeight();
+		picsize = width * height;
+		int[] pixels = (int[]) edges.getData().getDataElements(0, 0, width, height, null);
+		
+		boolean flag = true;
+		
+		System.out.println("inside findPalmColor");
+		for(int j = 0; j < width; j++)
+		{
+			for(int k = 0; k < height; k++)
+			{
+				int index = j + k * width;
+			
+				if((k >= (2*height/3))&&(k <= (8*height/9))&&(j >=(width/3)&&(j <= (2*width/3))))
+				{
+					pixels[index] = 100;
+					if(flag)
+					{
+						System.out.printf("inside box pixels[%d] = %d", index, pixels[index]);
+						flag = !flag;
+					}
+				}
+			}
+		}
+		edges.getWritableTile(0, 0).setDataElements(0, 0, width, height, pixels);
+		return edges;
+	}
+	
+	//pathLen recursively finds the straight line distance of the paths leading away from a beginning pixel and returns the largest path
+	public int pathLen(int []pixels, int index, char direction)
+	{
+		System.out.println("inside pathLen");
+		int indexN = index - width;
+		int indexS = index + width;
+		int indexW = index - 1;
+		int indexE = index + 1;
+		int indexNW = indexN - 1;
+		int indexNE = indexN + 1;
+		int indexSW = indexS - 1;
+		int indexSE = indexS + 1;
+		if(direction == 'A')
+		{
+			int N = pathLen(pixels, index, 'N');
+			int S = pathLen(pixels, index, 'S');
+			int W = pathLen(pixels, index, 'W');
+			int E = pathLen(pixels, index, 'E');
+			if((N >= S) && (N >= W) &&(N>=E))
+			{
+				return N;
+			}
+			else if((S>=N)&&(S>=W)&&(S>=E))
+			{
+				return S;
+			}
+			else if((W>=N)&&(W>=S)&&(W>=E))
+			{
+				return W;
+			}
+			else
+			{
+				return E;
+			}
+		}
+		if(direction == 'N')
+		{
+			//base case index is < width meaning we have hit the top of the image
+			if(index < width)
+			{
+				return 0;
+			}
+			else if(pixels[index] == pixels[indexN])
+			{
+				return pathLen(pixels, indexN,'N') + 1;
+			}
+			return 0;
+		}
+		else if(direction == 'S')
+		{
+			//base case index is > picsize - width meaning we have hit the bottom of the image
+			if(index < (picsize - width))
+			{
+				return 0;
+			}
+			else if(pixels[index] == pixels[indexS])
+			{
+				return pathLen(pixels, indexS,'S') + 1;
+			}
+			return 0;
+		}
+		else if(direction == 'W')
+		{
+			//base case index is a multiple of width + 1 or 0 making it on the western edge
+			if((index == 0)||(index%(width+1) == 0))
+			{
+				return 0;
+			}
+			else if(pixels[index] == pixels[indexW])
+			{
+				return pathLen(pixels, indexW,'W') + 1;
+			}
+			return 0;
+		}
+		else if(direction =='E')
+		{
+			//base case index is a multiple of width making it on the eastern edge
+			if(index%(width) == 0)
+			{
+				return 0;
+			}
+			else if(pixels[index] == pixels[indexE])
+			{
+				return pathLen(pixels, indexE,'E') + 1;
+			}
+			return 0;
+		}
+			return 0;
+	}
+
+}
+

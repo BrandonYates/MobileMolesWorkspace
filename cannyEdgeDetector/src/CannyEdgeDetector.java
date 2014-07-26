@@ -451,7 +451,7 @@ public class CannyEdgeDetector {
 
 		private void thresholdEdges() {
 			for (int i = 0; i < picsize; i++) {
-				data[i] = data[i] > 0 ? -1 : 0xff000000;
+				data[i] = data[i] > 0 ? -1 : 0xff;
 			}
 		}
 		
@@ -465,8 +465,8 @@ public class CannyEdgeDetector {
 				int[] pixels = (int[]) sourceImage.getData().getDataElements(0, 0, width, height, null);
 				for (int i = 0; i < picsize; i++) {
 					int p = pixels[i];
-					int r = (p & 0xff0000) >> 16;
-					int g = (p & 0xff00) >> 8;
+					int r = (p & 0xff00) >> 16;
+					int g = (p & 0xff) >> 8;
 					int b = p & 0xff;
 					data[i] = luminance(r, g, b);
 				}
@@ -484,9 +484,9 @@ public class CannyEdgeDetector {
 	            byte[] pixels = (byte[]) sourceImage.getData().getDataElements(0, 0, width, height, null);
 	            int offset = 0;
 	            for (int i = 0; i < picsize; i++) {
-	                int b = pixels[offset++] & 0xff;
-	                int g = pixels[offset++] & 0xff;
-	                int r = pixels[offset++] & 0xff;
+	                int b = pixels[offset++] & 0xffff;
+	                int g = pixels[offset++] & 0xffff;
+	                int r = pixels[offset++] & 0xffff;
 	                data[i] = luminance(r, g, b);
 	            }
 	        } else {

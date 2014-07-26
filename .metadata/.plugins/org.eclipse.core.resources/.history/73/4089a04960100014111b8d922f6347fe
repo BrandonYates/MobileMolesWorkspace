@@ -1,0 +1,35 @@
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+
+
+public class fingerFinder {
+	
+	private int height;
+	private int width;
+	private int picsize;
+	
+	public int numFingers(BufferedImage edges){
+		
+		width = edges.getWidth();
+		height = edges.getHeight();
+		picsize = width * height;
+		
+		int[] pixels = (int[]) edges.getData().getDataElements(0, 0, width, height, null);
+		for (int i = 0; i < picsize; i++) {
+			System.out.printf("%d\n", i);
+			if(i!= picsize -1)
+			{
+				if(pixels[i] != pixels[i+1])
+				{
+					System.out.printf("pixels[%d] = %d\n", i, pixels[i]);
+					System.out.printf("pixels[%d] = %d\n", i+1, pixels[i+1]);
+					break;
+				}
+			}
+		}
+		return 0;
+	}
+
+}
